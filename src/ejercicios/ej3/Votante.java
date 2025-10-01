@@ -2,16 +2,16 @@ package ejercicios.ej3;
 
 public class Votante extends Thread {
 
-    Municipio municipioAFavor;
+    Partido partidoAFavor;
     Urna urna;
 
-    public Votante(Municipio municipioAFavor, Urna urna){
-        this.municipioAFavor = municipioAFavor;
+    public Votante(Partido partidoAFavor, Urna urna){
+        this.partidoAFavor = partidoAFavor;
         this.urna = urna;
     }
 
     @Override
     public void run() {
-        urna.votar(municipioAFavor);
+        urna.votar(partidoAFavor);
     }
 }

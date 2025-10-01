@@ -1,6 +1,6 @@
 package ejercicios.ej3;
 
-public class Municipio{
+public class Partido {
 
     private int votos =0;
 

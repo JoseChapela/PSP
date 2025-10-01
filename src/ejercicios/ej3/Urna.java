@@ -2,20 +2,20 @@ package ejercicios.ej3;
 
 public class Urna {
 
-    Municipio[] municipios;
+    Partido[] partidos;
 
-    public Urna(int num_Municipios){
-        municipios = new Municipio[num_Municipios];
-        for(int i=0;i<num_Municipios;i++){
-            municipios[i] = new Municipio();
+    public Urna(int num_Partidos){
+        partidos = new Partido[num_Partidos];
+        for(int i=0;i<num_Partidos;i++){
+            partidos[i] = new Partido();
         }
     }
 
-    public Municipio[] getMunicipios() {
-        return municipios;
+    public Partido[] getPartidos() {
+        return partidos;
     }
 
-    public void votar(Municipio municipio){
-        municipio.votar();
+    public void votar(Partido partido){
+        partido.votar();
     }
 }
